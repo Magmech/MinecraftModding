@@ -1,4 +1,6 @@
 {
     "item.firstmod.example_item": "Example Item",
-    "itemGroup.firstmod": "Example Mod"
+    "itemGroup.firstmod": "Example Mod",
+    "item.firstmod.example_sword": "Example Sword"
+
 }

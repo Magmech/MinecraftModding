@@ -2,6 +2,8 @@ package mod.robeyclay.modid;
 
 import mod.robeyclay.itemmods.init.ModItemGroups;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolItem;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -24,6 +26,9 @@ public final class ModEventSubscriber {
         event.getRegistry().registerAll(
                 setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_item")
         );
+        event.getRegistry().registerAll(
+                setup(new SwordItem(FirstMod.FirstSwordItemTier, 10, 100, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_sword")
+        );
     }
 
     //Next 2 methods allow for the registers to be properly called and created as they are fragile and can easily break other mods
@@ -35,5 +40,4 @@ public final class ModEventSubscriber {
         entry.setRegistryName(registryName);
         return entry;
     }
-
 }
