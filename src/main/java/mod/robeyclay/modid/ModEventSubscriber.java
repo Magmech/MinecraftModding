@@ -1,5 +1,6 @@
-package mod.magmech.modid;
+package mod.robeyclay.modid;
 
+import mod.robeyclay.itemmods.init.ModItemGroups;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
@@ -21,7 +22,7 @@ public final class ModEventSubscriber {
     //Item names must be registered (Mapped) to Item instances in order for the game to recognize it
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
-                setup(new Item(new Item.Properties()), "example_item")
+                setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_item")
         );
     }
 

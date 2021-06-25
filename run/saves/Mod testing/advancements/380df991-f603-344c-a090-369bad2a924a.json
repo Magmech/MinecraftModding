@@ -1,6 +1,7 @@
 {
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:snowy_mountains": "2021-06-24 19:47:52 -0600",
       "minecraft:snowy_tundra": "2021-06-24 14:18:00 -0600",
       "minecraft:snowy_taiga": "2021-06-24 14:16:25 -0600"
     },

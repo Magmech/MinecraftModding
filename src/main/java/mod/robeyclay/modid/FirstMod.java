@@ -1,4 +1,4 @@
-package mod.magmech.modid;
+package mod.robeyclay.modid;
 
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Logger;
