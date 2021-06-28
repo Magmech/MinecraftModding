@@ -1,6 +1,10 @@
 {
     "item.firstmod.example_item": "Example Item",
-    "itemGroup.firstmod": "Example Mod",
-    "item.firstmod.example_sword": "Example Sword"
+    "itemGroup.firstmod": "God Items",
+    "item.firstmod.example_sword": "God Sword",
+    "item.firstmod.example_shovel": "God Shovel",
+    "item.firstmod.example_pickaxe": "God Pickaxe",
+    "item.firstmod.example_hoe": "God Hoe",
+    "item.firstmod.example_axe": "God Axe"
 
 }
