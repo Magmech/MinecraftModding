@@ -1,8 +1,11 @@
 package mod.robeyclay.modid;
 
+import net.minecraft.inventory.CraftResultInventory;
+import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.IItemProvider;
+import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;

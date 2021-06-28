@@ -8,5 +8,5 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(FirstMod.MODID)
 //This class is for the creation of static references for mod items
 public class ModItems {
-    public static final Item example_item = null;
+    public static final Item example_ore = null;
 }

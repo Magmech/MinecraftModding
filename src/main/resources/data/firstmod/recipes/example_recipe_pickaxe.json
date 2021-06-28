@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "c": {
+      "item": "firstmod:example_ore"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "firstmod:example_pickaxe",
+    "count": 1
+  }
+}
