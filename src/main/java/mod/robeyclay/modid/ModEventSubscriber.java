@@ -1,6 +1,7 @@
 package mod.robeyclay.modid;
 
 import mod.robeyclay.itemmods.init.ModItemGroups;
+import mod.robeyclay.itemmods.init.ModItems;
 import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
@@ -16,14 +17,13 @@ import net.minecraftforge.registries.IForgeRegistryEntry;
  */
 @EventBusSubscriber(modid = FirstMod.MODID, bus = EventBusSubscriber.Bus.MOD)
 public final class ModEventSubscriber extends Items {
-    public static final Item EXAMPLE_INGOT = new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP));
 
     //Tells Forge this method is listening for an event
     @SubscribeEvent
     //Item names must be registered (Mapped) to Item instances in order for the game to recognize it
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
-                setup(EXAMPLE_INGOT, "example_ingot")
+                setup(ModItems.EXAMPLE_INGOT, "example_ingot")
         );
         event.getRegistry().registerAll(
             setup(new SwordItem(FirstMod.GOD, 10, 10, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_sword")

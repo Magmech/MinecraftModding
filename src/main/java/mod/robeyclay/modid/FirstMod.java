@@ -26,7 +26,7 @@ public class FirstMod {
     public static final ItemTier GOLD = new ItemTier(32, 12.0F, 0.0F, 0, 22, Ingredient.fromItems(Items.GOLD_INGOT));
     public static final ItemTier DIAMOND = new ItemTier(1561,8.0F, 3.0F, 3, 10, Ingredient.fromItems(Items.DIAMOND));
     public static final ItemTier NETHERITE = new ItemTier(2031, 9.0F, 4.0F, 4, 15, Ingredient.fromItems(Items.DIAMOND));
-    public static final ItemTier GOD = new ItemTier(50000, 1000.0F, 1000.0F, 4, 50, Ingredient.fromItems(ModEventSubscriber.EXAMPLE_INGOT.getItem()));
+    public static final ItemTier GOD = new ItemTier(50000, 1000.0F, 1000.0F, 4, 50, Ingredient.fromItems(ModItems.EXAMPLE_INGOT.getItem()));
 
 
     public FirstMod() {
