@@ -15,14 +15,15 @@ import net.minecraftforge.registries.IForgeRegistryEntry;
         value:
  */
 @EventBusSubscriber(modid = FirstMod.MODID, bus = EventBusSubscriber.Bus.MOD)
-public final class ModEventSubscriber {
+public final class ModEventSubscriber extends Items {
+    public static final Item EXAMPLE_INGOT = new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP));
 
     //Tells Forge this method is listening for an event
     @SubscribeEvent
     //Item names must be registered (Mapped) to Item instances in order for the game to recognize it
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
-                setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_ingot")
+                setup(EXAMPLE_INGOT, "example_ingot")
         );
         event.getRegistry().registerAll(
             setup(new SwordItem(FirstMod.GOD, 10, 10, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_sword")
