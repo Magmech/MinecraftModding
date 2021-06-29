@@ -22,7 +22,7 @@ public final class ModEventSubscriber {
     //Item names must be registered (Mapped) to Item instances in order for the game to recognize it
     public static void onRegisterItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
-                setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_ore")
+                setup(new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_ingot")
         );
         event.getRegistry().registerAll(
             setup(new SwordItem(FirstMod.GOD, 10, 10, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_sword")
