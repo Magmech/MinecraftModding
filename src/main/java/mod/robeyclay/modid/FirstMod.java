@@ -1,8 +1,7 @@
 package mod.robeyclay.modid;
 
+import mod.robeyclay.itemmods.init.ModItemGroups;
 import mod.robeyclay.itemmods.init.ModItems;
-import net.minecraft.block.SoundType;
-import net.minecraft.client.audio.Sound;
 import net.minecraft.inventory.CraftResultInventory;
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.item.Item;
@@ -10,8 +9,6 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.IItemProvider;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.common.crafting.CraftingHelper;
 import net.minecraftforge.fml.common.Mod;
@@ -31,13 +28,12 @@ public class FirstMod {
     public static final ItemTier GOLD = new ItemTier(32, 12.0F, 0.0F, 0, 22, Ingredient.fromItems(Items.GOLD_INGOT));
     public static final ItemTier DIAMOND = new ItemTier(1561,8.0F, 3.0F, 3, 10, Ingredient.fromItems(Items.DIAMOND));
     public static final ItemTier NETHERITE = new ItemTier(2031, 9.0F, 4.0F, 4, 15, Ingredient.fromItems(Items.DIAMOND));
-    public static final ItemTier GOD = new ItemTier(1561, 8.0F, 3.0F, 3, 10, Ingredient.fromItems(ModItems.EXAMPLE_INGOT.asItem()));
+    public static final ItemTier GOD = new ItemTier(50000, 1000.0F, 1000.0F, 4, 50, Ingredient.fromItems(ModItems.EXAMPLE_INGOT.getItem()));
 
     public static final ArmorTier LEATHER_HELMET = new ArmorTier(55,1, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_helmet", 0F);
 //    public static final ArmorTier LEATHER_CHESTPLATE = new ArmorTier(80,3, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_chestplate", 0F);
 //    public static final ArmorTier LEATHER_LEGS = new ArmorTier(75,2, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_legs", 0F);
 //    public static final ArmorTier LEATHER_BOOTS = new ArmorTier(65,1, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_boots", 0F);
-
 
 
 

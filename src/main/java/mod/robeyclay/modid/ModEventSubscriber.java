@@ -27,22 +27,22 @@ public final class ModEventSubscriber extends Items {
                 setup(ModItems.EXAMPLE_INGOT, "example_ingot")
         );
         event.getRegistry().registerAll(
-            setup(ModItems.EXAMPLE_SWORD, "example_sword")
+            setup(new SwordItem(FirstMod.GOD, 10, 10, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_sword")
         );
         event.getRegistry().registerAll(
-          //      setup(ModItems.EXAMPLE_SHOVEL, "example_shovel")
+                setup(new ShovelItem(FirstMod.GOD, 10, 10, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_shovel")
         );
         event.getRegistry().registerAll(
-          //      setup(ModItems.EXAMPLE_PICKAXE, "example_pickaxe")
+                setup(new PickaxeItem(FirstMod.GOD, 10, 10, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_pickaxe")
         );
         event.getRegistry().registerAll(
-        //        setup(ModItems.EXAMPLE_AXE, "example_axe")
+                setup(new AxeItem(FirstMod.GOD, 10, 10, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_axe")
         );
         event.getRegistry().registerAll(
-                //setup(ModItems.EXAMPLE_HOE, "example_hoe")
+                setup(new HoeItem(FirstMod.GOD, 10, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_hoe")
         );
         event.getRegistry().registerAll(
-              setup(new ArmorItem(FirstMod.LEATHER_HELMET, EquipmentSlotType.HEAD, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_head")
+                setup(new ArmorItem(FirstMod.LEATHER_HELMET, EquipmentSlotType.HEAD, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_head")
         );
 
     }

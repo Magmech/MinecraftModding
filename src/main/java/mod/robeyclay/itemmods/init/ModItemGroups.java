@@ -1,7 +1,6 @@
 package mod.robeyclay.itemmods.init;
 
 import mod.robeyclay.modid.FirstMod;
-import mod.robeyclay.modid.ModEventSubscriber;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
@@ -29,6 +28,6 @@ public class ModItemGroups {
     The lambda is important since it creates a Supplier (object created without parameters) after the Items are loaded in
     ItemGroup are created before Items are registered causing a NullPointerException if the delay doesn't exist
      */
-    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(FirstMod.MODID, () -> new ItemStack(ModItems.EXAMPLE_INGOT));
+    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(FirstMod.MODID, () -> new ItemStack(ModItems.example_ingot));
 
 }
