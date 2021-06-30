@@ -31,10 +31,39 @@ public class FirstMod {
     public static final ItemTier GOD = new ItemTier(50000, 1000.0F, 1000.0F, 4, 50, Ingredient.fromItems(ModItems.EXAMPLE_INGOT.getItem()));
 
     public static final ArmorTier LEATHER_HELMET = new ArmorTier(55,1, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_helmet", 0F);
-//    public static final ArmorTier LEATHER_CHESTPLATE = new ArmorTier(80,3, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_chestplate", 0F);
-//    public static final ArmorTier LEATHER_LEGS = new ArmorTier(75,2, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_legs", 0F);
-//    public static final ArmorTier LEATHER_BOOTS = new ArmorTier(65,1, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_boots", 0F);
+    public static final ArmorTier LEATHER_CHESTPLATE = new ArmorTier(80,3, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_chest", 0F);
+    public static final ArmorTier LEATHER_LEGS = new ArmorTier(75,2, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_legs", 0F);
+    public static final ArmorTier LEATHER_BOOTS = new ArmorTier(65,1, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, Ingredient.fromItems(Items.LEATHER), "leather_boots", 0F);
 
+    public static final ArmorTier CHAIN_HELMET = new ArmorTier(165, 2, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, Ingredient.EMPTY, "chain_helmet", 0F);
+    public static final ArmorTier CHAIN_CHESTPLATE = new ArmorTier(240, 5, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, Ingredient.EMPTY, "chain_chest", 0F);
+    public static final ArmorTier CHAIN_LEGS = new ArmorTier(225, 4, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, Ingredient.EMPTY, "chain_legs", 0F);
+    public static final ArmorTier CHAIN_BOOTS = new ArmorTier(195, 1, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, Ingredient.EMPTY, "chain_boots", 0F);
+
+    public static final ArmorTier IRON_HELMET = new ArmorTier(165, 2, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, Ingredient.fromItems(Items.IRON_INGOT), "iron_helmet", 0F);
+    public static final ArmorTier IRON_CHESTPLATE = new ArmorTier(240, 6, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, Ingredient.fromItems(Items.IRON_INGOT), "iron_chest", 0F);
+    public static final ArmorTier IRON_LEGS = new ArmorTier(225, 5, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, Ingredient.fromItems(Items.IRON_INGOT), "iron_legs", 0F);
+    public static final ArmorTier IRON_BOOTS = new ArmorTier(195, 2, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, Ingredient.fromItems(Items.IRON_INGOT), "iron_boots", 0F);
+
+    public static final ArmorTier GOLD_HELMET = new ArmorTier(77, 2, 25, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, Ingredient.fromItems(Items.GOLD_INGOT), "gold_helmet", 0F);
+    public static final ArmorTier GOLD_CHESTPLATE = new ArmorTier(112, 5, 25, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, Ingredient.fromItems(Items.GOLD_INGOT), "gold_chest", 0F);
+    public static final ArmorTier GOLD_LEGS = new ArmorTier(105, 3, 25, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, Ingredient.fromItems(Items.GOLD_INGOT), "gold_legs", 0F);
+    public static final ArmorTier GOLD_BOOTS = new ArmorTier(91, 1, 25, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, Ingredient.fromItems(Items.GOLD_INGOT), "gold_boots", 0F);
+
+    public static final ArmorTier DIAMOND_HELMET = new ArmorTier(363, 3, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(Items.DIAMOND), "diamond_helmet", 2F);
+    public static final ArmorTier DIAMOND_CHESTPLATE = new ArmorTier(528, 8, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(Items.DIAMOND), "diamond_chest", 2F);
+    public static final ArmorTier DIAMOND_LEGS = new ArmorTier(495, 6, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(Items.DIAMOND), "diamond_legs", 2F);
+    public static final ArmorTier DIAMOND_BOOTS = new ArmorTier(429, 3, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(Items.DIAMOND), "diamond_boots", 2F);
+
+    public static final ArmorTier NETHERITE_HELMET = new ArmorTier(407, 3, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(Items.DIAMOND), "netherite_helmet", 3F);
+    public static final ArmorTier NETHERITE_CHESTPLATE = new ArmorTier(592, 8, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(Items.DIAMOND), "netherite_chest", 3F);
+    public static final ArmorTier NETHERITE_LEGS = new ArmorTier(555, 6, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(Items.DIAMOND), "netherite_legs", 3F);
+    public static final ArmorTier NETHERITE_BOOTS = new ArmorTier(481, 3, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(Items.DIAMOND), "netherite_boots", 3F);
+
+    public static final ArmorTier GOD_HELMET = new ArmorTier(50000, 20, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(ModItems.EXAMPLE_INGOT.getItem()), "god_helmet", 20F);
+    public static final ArmorTier GOD_CHESTPLATE = new ArmorTier(50000, 20, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(ModItems.EXAMPLE_INGOT.getItem()), "god_chest", 20F);
+    public static final ArmorTier GOD_LEGS = new ArmorTier(50000, 20, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(ModItems.EXAMPLE_INGOT.getItem()), "god_legs", 20F);
+    public static final ArmorTier GOD_BOOTS = new ArmorTier(50000, 20, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, Ingredient.fromItems(ModItems.EXAMPLE_INGOT.getItem()), "god_boots", 20F);
 
 
     public FirstMod() {

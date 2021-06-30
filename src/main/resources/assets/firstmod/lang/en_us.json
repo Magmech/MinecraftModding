@@ -6,6 +6,9 @@
     "item.firstmod.example_pickaxe": "God Pickaxe",
     "item.firstmod.example_hoe": "God Hoe",
     "item.firstmod.example_axe": "God Axe",
-    "item.firstmod.example_head": "God Helmet"
+    "item.firstmod.example_head": "God Helmet",
+    "item.firstmod.example_chest": "God Chestplate",
+    "item.firstmod.example_legs": "God Pants",
+    "item.firstmod.example_boots": "God Boots"
 
 }

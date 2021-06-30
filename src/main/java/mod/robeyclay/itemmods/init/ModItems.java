@@ -12,8 +12,7 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(FirstMod.MODID)
 //This class is for the creation of static references for mod items
 public class ModItems {
-    public static final Item example_ingot = null;
-    public static final Item EXAMPLE_INGOT = new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP));
 
+    public static final Item EXAMPLE_INGOT = new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP));
 
 }

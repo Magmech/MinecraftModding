@@ -42,8 +42,18 @@ public final class ModEventSubscriber extends Items {
                 setup(new HoeItem(FirstMod.GOD, 10, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_hoe")
         );
         event.getRegistry().registerAll(
-                setup(new ArmorItem(FirstMod.LEATHER_HELMET, EquipmentSlotType.HEAD, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_head")
+                setup(new ArmorItem(FirstMod.GOD_HELMET, EquipmentSlotType.HEAD, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_head")
         );
+        event.getRegistry().registerAll(
+                setup(new ArmorItem(FirstMod.GOD_CHESTPLATE, EquipmentSlotType.CHEST, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_chest")
+        );
+        event.getRegistry().registerAll(
+                setup(new ArmorItem(FirstMod.GOD_LEGS, EquipmentSlotType.LEGS, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_legs")
+        );
+        event.getRegistry().registerAll(
+                setup(new ArmorItem(FirstMod.GOD_BOOTS, EquipmentSlotType.FEET, new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)), "example_boots")
+        );
+
 
     }
 
