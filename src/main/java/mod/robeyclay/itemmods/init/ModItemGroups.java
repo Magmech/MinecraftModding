@@ -29,5 +29,4 @@ public class ModItemGroups {
     ItemGroup are created before Items are registered causing a NullPointerException if the delay doesn't exist
      */
     public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(FirstMod.MODID, () -> new ItemStack(ModItems.EXAMPLE_INGOT));
-
 }

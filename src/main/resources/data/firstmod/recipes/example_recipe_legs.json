@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "firstmod:example_ingot"
+    }
+  },
+  "result": {
+    "item": "firstmod:example_legs",
+    "count": 1
+  }
+}
